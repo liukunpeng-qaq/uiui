@@ -1,0 +1,75 @@
+html {
+    font-size: 100px;
+}
+
+header {
+    width: 100%;
+    height: 1.12rem;
+    background: #2A2A2A;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    width: 2.1rem;
+    height: .62rem;
+    background: url(../image/Layer-15.png) no-repeat;
+    background-size: contain;
+    margin: .25rem 0 0 .16rem;
+}
+
+.menu {
+    float: right;
+    margin: .4rem .23rem 0 0;
+}
+
+.menu span {
+    display: block;
+    width: .36rem;
+    height: .07rem;
+    background: #fff;
+    margin: .03rem 0;
+    border-radius: .03rem;
+}
+
+/* swiper */
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-pagination-bullet {
+    background: #fff;
+}
+
+/* content */
+.content {
+    padding: 0 .2rem;
+    margin-top:.2rem;
+}
+
+.item {
+    margin-bottom:.36rem;
+    box-shadow: 0px .05rem .06rem 0px rgba(178, 178, 178, 0.75);
+    border-radius: .05rem;
+}
+
+.item img {
+    width: 100%;
+    border-radius: .05rem .05rem 0 0;
+}
+.txt{
+    padding:.34rem;
+}
+.txt p {
+    font-size: .28rem;
+    font-weight: 400;
+    line-height: .24rem;
+    text-align: center;
+}
+.txt .dec {
+    color: #777;
+}
+.txt .price{
+    margin-top:.22rem;
+    color:#ED3A3A;
+}

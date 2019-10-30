@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- header HTML5H5新增的标签 头部header 底部 footer main 主体 -->
+    <header>
+        <h1 class="logo">
+            <a href="#"></a>
+        </h1>
+        <div class="menu">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+        </div>
+    </header>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="image/LBT.jpg" alt=""></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- 如果需要滚动条 -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <main>
+        <section>
+            <div class="pic">
+                <img src="image/LBT.jpg" alt="">
+            </div>
+            <div class="txt">
+                <p class="dec">Vue.js从理论精讲到项目实战课程</p>
+                <p class="pirce">￥599.00元</p>
+            </div>
+        </section>
+    </main>
+    <script src="js/swiper.min.css"></script>
+    <!-- 引入动态判断rem的脚本 -->
+    <script>
+        function refreshRem() {
+            var desW = 640,
+                winW = document.documentElement.clientWidth;
+            document.documentElement.style.fontSize = ratio * 100 + 'px';
+        }
+        refreshRem();
+        window.addEventListener('resize', refreshRem);
+    </script>
+    <!-- swiper -->
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            loop: true, // 循环模式选项
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            //自动切换
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            }
+        })        
+    </script>
+</body>
+
+</html>
